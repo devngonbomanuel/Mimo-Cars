@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frota</title>
+    <link rel="stylesheet" href="../css/sidenav.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!--Navbar-->
+    <header>
+        <div class="header-content">
+            <div class="header-w">
+                <div class="logo">
+                    <img src="../img/logo-empresa.png" alt="logo">
+                </div>
+                <img src="../img/Admin.jpg"  id="admin" alt="foto admin">
+            </div>
+        </div>
+    </header>
+
+    <!--Navegacao sidebar-->
+    <div class="container">
+        <aside   class="menu">
+            <ul>
+                <a href="home.html">
+                <li data-li="Dashboard">
+                    <i class='bx bxs-dashboard bx-sm'></i>
+                    <span class="side-item">Dashboard</span>
+                </li>
+            </a>
+                <a href="frota.html"><li  data-li="Frota">
+                    <i class='bx bxs-car bx-sm'></i>
+                    <span class="side-item">Frota</span>
+                </li></a>
+                <a href="locacoes.html">
+                    <li data-li="Locacoes">
+                        <i class='bx bx-rotate-right bx-sm'></i>
+                        <span class="side-item">Locações</span>
+                    </li>
+                </a>
+                <a href="locatarios.html">
+                    <li data-li="Locatarios">
+                        <i class='bx bxs-user-check bx-sm' ></i>
+                        <span class="side-item">Locatários</span>
+                    </li>
+                </a>
+                <a href="/index.html">
+                    <li data-li="Sair">
+                        <i class='bx bx-log-out bx-sm'></i>
+                        <span class="side-item">Sair</span>
+                    </li>
+                </a>
+            </ul>
+        </aside>
+
+        <!--Corpo da pagina-->
+        <section class="main">
+            <div class="table-content">
+                <h1>Frota</h1>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Placa</th>
+                                <th>Marca</th>
+                                <th>Modelo</th>
+                                <th>Ano de Fabrico</th>
+                                <th>Km</th>
+                                <th>Valor (AKz)</th>
+                                <th>Taxa (Akz)</th>
+                                <th>Total (Akz)</th>
+                                <th></th>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                <td>1</td>
+                                <td>LD-24-55-AA</td>
+                                <td>Merecedes</td>
+                                <td>G-63</td>
+                                <td>2013</td>
+                                <td>20</td>
+                                <td>80.000,00</td>
+                                <td>7.000,00</td>
+                                <td>87.000,00</td>
+                                <td>
+                                    <div class="inside">
+                                        <button id="edit">Editar</button>
+                                        <button id="del">Excluir</button>
+                                    </div>
+                                </td>
+                                </tr>
+                            </tbody>
+                    
+                            <tbody>
+                                <tr>
+                                <td>2</td>
+                                <td>EB-89-76-CD</td>
+                                <td>Toyota</td>
+                                <td>Prado</td>
+                                <td>2020</td>
+                                <td>0</td>
+                                <td>120.000,00</td>
+                                <td>8.000,00</td>
+                                <td>128.000,00</td>
+                                <td>
+                                    <div class="inside">
+                                        <button id="edit">Editar</button>
+                                        <button id="del">Excluir</button>
+                                    </div>
+                                </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                <td>3</td>
+                                <td>EW-50-20-PT</td>
+                                <td>Porsche</td>
+                                <td>Cayenne</td>
+                                <td>2015</td>
+                                <td>300</td>
+                                <td>250.000,00</td>
+                                <td>20.000,00</td>
+                                <td>270.000,00</td>
+                                <td>
+                                    <div class="inside">
+                                        <button id="edit">Editar</button>
+                                        <button id="del">Excluir</button>
+                                    </div>
+                                </td>
+                                </tr>
+                            </tbody>
+                        </thead>
+                    </table>
+                    <div class="add-btn">
+                        <a href="cadastro.html">
+                            <button id="add">Adicionar</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="rodape">
+        <div class="rodape-container">
+            <span>Todos os direitos reservados &copy; 2024, MimoCar.</span>
+        </div>
+    </footer> 
+</body>
+</html>

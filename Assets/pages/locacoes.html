@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locações</title>
+    <link rel="stylesheet" href="../css/sidenav.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!--Navbar-->
+    <header>
+        <div class="header-content">
+            <div class="header-w">
+                <div class="logo">
+                    <img src="../img/logo-empresa.png" alt="logo">
+                </div>
+                <img src="../img/Admin.jpg"  id="admin" alt="foto admin">
+            </div>
+        </div>
+    </header>
+
+    <!--Navegacao sidebar-->
+    <div class="container">
+        <aside   class="menu">
+            <ul>
+                <a href="home.html">
+                <li data-li="Dashboard">
+                    <i class='bx bxs-dashboard bx-sm'></i>
+                    <span class="side-item">Dashboard</span>
+                </li>
+            </a>
+                <a href="frota.html"><li  data-li="Frota">
+                    <i class='bx bxs-car bx-sm'></i>
+                    <span class="side-item">Frota</span>
+                </li></a>
+                <a href="locacoes.html">
+                    <li data-li="Locacoes">
+                        <i class='bx bx-rotate-right bx-sm'></i>
+                        <span class="side-item">Locações</span>
+                    </li>
+                </a>
+                <a href="locatarios.html">
+                    <li data-li="Locatarios">
+                        <i class='bx bxs-user-check bx-sm' ></i>
+                        <span class="side-item">Locatários</span>
+                    </li>
+                </a>
+                <a href="/index.html">
+                    <li data-li="Sair">
+                        <i class='bx bx-log-out bx-sm'></i>
+                        <span class="side-item">Sair</span>
+                    </li>
+                </a>
+            </ul>
+        </aside>
+
+        <!--Corpo da pagina-->
+        <section class="main">
+            <div class="table-content">
+                <h1>Locações</h1>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Veículo</th>
+                                <th>Locatário</th>
+                                <th>Data de Aluguel</th>
+                                <th>Data de Vencimento</th>
+                                <th>Kms Andados</th>
+                                <th>Valor (AKz)</th>
+                                <th></th>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                <td>L22</td>
+                                <td>Mercedes G-63</td>
+                                <td>Julio Manuel</td>
+                                <td>12-05-2024</td>
+                                <td>13-05-2024</td>
+                                <td>300</td>
+                                <td>128.000,00</td>
+                                <td>
+                                    <div class="inside">
+                                        <button id="edit">Editar</button>
+                                        <button id="del">Excluir</button>
+                                    </div>
+                                </td>
+                                </tr>
+                            </tbody>
+                    
+                            <tbody>
+                                <tr>
+                                <td>L32</td>
+                                <td>Porsche Panamera</td>
+                                <td>Hermínio da Silva</td>
+                                <td>8-05-2024</td>
+                                <td>22-05-2024</td>
+                                <td>320</td>
+                                <td>450.000,00</td>
+                                <td>
+                                    <div class="inside">
+                                        <button id="edit">Editar</button>
+                                        <button id="del">Excluir</button>
+                                    </div>
+                                </td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr>
+                                <td>L15</td>
+                                <td>Toyota Prado</td>
+                                <td>Mesach Zua</td>
+                                <td>04-02-2024</td>
+                                <td>05-04-2024</td>
+                                <td>500</td>
+                                <td>300.000,00</td>
+                                <td>
+                                    <div class="inside">
+                                        <button id="edit">Editar</button>
+                                        <button id="del">Excluir</button>
+                                    </div>
+                                </td>
+                                </tr>
+                            </tbody>
+                        </thead>
+                    </table>
+                    <div class="add-btn">
+                        <a href="cadastro.html">
+                            <button id="add">Adicionar</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="rodape">
+        <div class="rodape-container">
+            <span>Todos os direitos reservados &copy; 2024, MimoCar.</span>
+        </div>
+    </footer> 
+</body>
+</html>

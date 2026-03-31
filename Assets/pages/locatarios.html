@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locatários</title>
+    <link rel="stylesheet" href="../css/sidenav.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!--Navbar-->
+    <header>
+        <div class="header-content">
+            <div class="header-w">
+                <div class="logo">
+                    <img src="../img/logo-empresa.png" alt="logo">
+                </div>
+                <img src="../img/Admin.jpg"  id="admin" alt="foto admin">
+            </div>
+        </div>
+    </header>
+
+    <!--Navegacao sidebar-->
+    <div class="container">
+        <aside   class="menu">
+            <ul>
+                <a href="home.html">
+                <li data-li="Dashboard">
+                    <i class='bx bxs-dashboard bx-sm'></i>
+                    <span class="side-item">Dashboard</span>
+                </li>
+            </a>
+                <a href="frota.html"><li  data-li="Frota">
+                    <i class='bx bxs-car bx-sm'></i>
+                    <span class="side-item">Frota</span>
+                </li></a>
+                <a href="locacoes.html">
+                    <li data-li="Locacoes">
+                        <i class='bx bx-rotate-right bx-sm'></i>
+                        <span class="side-item">Locações</span>
+                    </li>
+                </a>
+                <a href="locatarios.html">
+                    <li data-li="Locatarios">
+                        <i class='bx bxs-user-check bx-sm' ></i>
+                        <span class="side-item">Locatários</span>
+                    </li>
+                </a>
+                <a href="/index.html">
+                    <li data-li="Sair">
+                        <i class='bx bx-log-out bx-sm'></i>
+                        <span class="side-item">Sair</span>
+                    </li>
+                </a>
+            </ul>
+        </aside>
+
+        <!--Corpo da pagina-->
+        <section class="main">
+            <div class="table-content">
+                <h1>Locatários</h1>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Endereço</th>
+                                <th>Telefone</th>
+                                <th>B.I</th>
+                                <th>Carteira de Motorista</th>
+                                <th></th>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                <td>Hermínio da Silva</td>
+                                <td>Rua 12, KK5000 - Belas</td>
+                                <td>934-332-222</td>
+                                <td>00654643LA023</td>
+                                <td>lA3299</td>
+                                <td>
+                                    <div class="inside">
+                                        <button id="edit">Editar</button>
+                                        <button id="del">Excluir</button>
+                                    </div>
+                                </td>
+                                </tr>
+                            </tbody>
+                    
+                            <tbody>
+                                <tr>
+                                <td>Júlio Manuel</td>
+                                <td>Casa 57, Av. N'gola Kiluanji - Cazenga</td>
+                                <td>933-224-949</td>
+                                <td>007875303LA042</td>
+                                <td>LA548</td>
+                                <td>
+                                    <div class="inside">
+                                        <button id="edit">Editar</button>
+                                        <button id="del">Excluir</button>
+                                    </div>
+                                </td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr>
+                                <td>Mesach Zua</td>
+                                <td>Casa 27, Balumuca - Cacuaco</td>
+                                <td>922-295-154</td>
+                                <td>00787830KN024</td>
+                                <td>LA0018</td>
+                                <td>
+                                    <div class="inside">
+                                        <button id="edit">Editar</button>
+                                        <button id="del">Excluir</button>
+                                    </div>
+                                </td>
+                                </tr>
+                            </tbody>
+                        </thead>
+                    </table>
+                    <div class="add-btn">
+                        <a href="cadastro.html">
+                            <button id="add">Adicionar</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="rodape">
+        <div class="rodape-container">
+            <span>Todos os direitos reservados &copy; 2024, MimoCar.</span>
+        </div>
+    </footer> 
+</body>
+</html>

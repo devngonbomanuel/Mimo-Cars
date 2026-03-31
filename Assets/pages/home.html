@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Dashboard</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!--Navbar-->
+    <header>
+        <div class="header-content">
+            <div class="header-w">
+                <div class="logo">
+                    <img src="../img/logo-empresa.png" alt="logo">
+                </div>
+                <img src="../img/Admin.jpg"  id="admin" alt="foto admin">
+            </div>
+        </div>
+    </header>
+
+    <!--Navegacao sidebar-->
+    <div class="container">
+        <aside  class="menu">
+            <ul>
+                <a href="home.html">
+                <li data-li="Dashboard">
+                    <i class='bx bxs-dashboard bx-sm'></i>
+                    <span class="side-item">Dashboard</span>
+                </li>
+            </a>
+                <a href="frota.html"><li  data-li="Frota">
+                    <i class='bx bxs-car bx-sm'></i>
+                    <span class="side-item">Frota</span>
+                </li></a>
+                <a href="locacoes.html">
+                    <li data-li="Locacoes">
+                        <i class='bx bx-rotate-right bx-sm'></i>
+                        <span class="side-item">Locações</span>
+                    </li>
+                </a>
+                <a href="locatarios.html">
+                    <li data-li="Locatarios">
+                        <i class='bx bxs-user-check bx-sm' ></i>
+                        <span class="side-item">Locatários</span>
+                    </li>
+                </a>
+                <a href="/index.html">
+                    <li data-li="Sair">
+                        <i class='bx bx-log-out bx-sm'></i>
+                        <span class="side-item">Sair</span>
+                    </li>
+                </a>
+            </ul>
+        </aside>
+
+        <!--Corpo da pagina-->
+        <section class="main">
+            <div class="main-top">
+                <h1>Dashboard</h1>
+            </div>
+            <div class="main-skills">
+                <div class="card">
+                    <i class='bx bxs-store bx-md'></i>
+                    <h3>Veículos Alocados</h3>
+                    <div id="qtd">
+                        +10
+                    </div>
+                </div>
+            </div>
+            <div class="main-skills">
+                <div class="card">
+                    <i class='bx bx-money-withdraw bx-md'></i>
+                    <h3>Veículos alugados</h3>
+                    <div id="qtd">
+                        +10
+                    </div>
+                </div>
+            </div>
+            <div class="main-skills">
+                <div class="card">
+                    <i class='bx bxs-car-mechanic bx-md'></i>
+                    <h3>Veículos em Manutenção</h3>
+                    <div id="qtd">
+                        +10
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-content">
+                <h1>Veículos Disponíveis</h1>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Marca</th>
+                                <th>Modelo</th>
+                                <th>Quantidade</th>
+                                <th>Status</th>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                <td>Hiunday</td>
+                                <td>Tucson</td>
+                                <td>10 veículos(s)</td>
+                                <td>Em Manutenção</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                <td>Mercedes</td>
+                                <td>G63</td>
+                                <td>5 veículo(s)</td>
+                                <td>Disponível</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                <td>Chevrolet</td>
+                                <td>Camaro</td>
+                                <td>2 veículo(s)</td>
+                                <td>Disponível</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Total: 17 veículos</td>
+                                </tr>
+                            </tfoot>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="rodape">
+        <div class="rodape-container">
+            <span>Todos os direitos reservados &copy; 2024, MimoCar.</span>
+        </div>
+    </footer> 
+    <script src="../js/script.js"></script>
+</body>
+</html>

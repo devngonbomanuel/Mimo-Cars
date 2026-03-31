@@ -1,0 +1,244 @@
+
+
+/*CSS--Páginas de Navegação*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*atrubutos gerais*/
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/*atributos para body*/
+body{
+    background: var(--aux-color);
+}
+
+/*variaveis p/ cores*/
+:root{
+    --prim-color: #ee3737;
+    --sec-color: #000;
+    --aux-color: #ffff;
+    --btn-color-1: #e73b3b;
+    --btn-color-2: rgb(78, 219, 78);
+    --btn-color-3: rgb(225, 168, 69);
+}
+
+/*container e elementos*/
+.container{
+    display: flex;
+}
+
+aside{
+    position: relative;
+    height: 85vh;
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(252, 251, 251, 0.1);
+}
+
+.logo{
+    text-align: center;
+    display: flex;
+}
+
+.logo img{
+    width: 170px;
+    height: 60px;
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+.container .side-item{
+    font-size: 1rem;
+}
+
+.container i{
+    color: var(--prim-color);
+}
+
+li{
+    position: relative;
+    cursor: pointer;
+    color: var(--sec-color);
+    font-size: 1rem;
+    display: table;
+    width: 260px;
+    padding: 15px;
+    border-radius: 5%;
+}
+
+li:hover{
+    background-color: #f1eaea;
+    transform: scale(1.02);
+    transition: 0.05s;
+    cursor: pointer;
+}
+
+.side-item{
+    bottom: 5px;
+    position: relative;
+    margin-left: 5px;
+}
+
+/*header e elementos*/
+.header-content{
+    position: relative;
+    width: 100%;
+    color: var(--aux-color);
+    border-bottom: 2px solid var(--prim-color);
+}
+
+.header-w #admin {
+    width: 50px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-right: 30px;
+    border: 1px solid rgba(146, 142, 142, 0.5);
+}
+
+.header-w{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--aux-color);
+    border-radius: 10px;
+}
+
+
+/*atributos para main e elementos*/
+.main{
+    position: relative;
+    width: 100%;
+    background: url("../img/cars-6.jpg") no-repeat center/cover;
+    background-color: rgba(0,0,0,0.4);
+    background-blend-mode: color;
+    padding: 20px;
+}   
+
+.main-top{
+    display: flex;
+    width: 100vh;
+    color: var(--aux-color);
+    padding-left: 12px;
+ }
+
+/*tabela e elementos*/
+.table-content h1{
+    margin-bottom: .2rem;
+    text-transform: uppercase;
+    color: var(--aux-color);
+    text-align: center;
+}
+
+.table-content{
+    background: rgba(252, 251, 251, 0.4);
+    margin: 0.5rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.table-container{
+    width: 100%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead{
+    background: var(--prim-color);
+    color: var(--aux-color);
+}
+
+th{
+    padding: 8px;
+    text-align: center;
+}
+
+tbody{
+    background: rgba(252, 251, 251, 0.8);
+}
+
+td{
+    padding: 8px;
+    font-size: 14px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #fff;
+}
+
+.table-container button {
+    display: inline-block;
+    justify-content: center;
+    width: 50px;
+    height: 30px;
+    margin-bottom: 2px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--aux-color)
+}
+
+.table-content .add-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+#add{
+    background: var(--btn-color-2);
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--aux-color)
+}
+
+#edit{
+    background: var(--btn-color-3);
+}
+
+#del{
+    background: var(--btn-color-1);
+}
+
+#edit:hover {
+    background: rgb(192, 142, 56);
+}
+#add:hover {
+    background: rgb(56, 157, 56);
+}
+#del:hover {
+    background: #991a1a;
+}
+
+.rodape{
+    background-color: var(--prim-color);
+    color: var(--aux-color);
+}
+
+.rodape-container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    top: 0;
+    bottom: 0;
+}
