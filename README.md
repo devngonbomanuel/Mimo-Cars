@@ -1,6 +1,6 @@
 ## Mimo-Cars
 
-- Interface para um istema de gestão de locadora de automóveis.
+- Interface para um sistema de gestão de locadora de automóveis.
 
 ## TECNOLOGIAS UTILIZADAS
 
